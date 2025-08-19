@@ -1,0 +1,98 @@
+#wrapper{
+    display: grid;
+    width: 1400px;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(6,minmax(100px, auto));
+    gap: 10px;
+}
+
+body{
+        background-color: #6B8E61;
+}
+
+header{
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+
+nav{
+    grid-column: 5/20;
+    grid-row: 1/2;
+}
+
+header, nav{
+    background-image: url(Images/Header\ Background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+   
+}
+nav ul li {
+    display: inline-flex;
+    padding: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color:black ;
+    border: 3px solid #f1f8f6;
+    border-radius: 25px;
+    padding: 5px;
+    transition: border-color 0.3s ease-in;
+    transition: background-color 0.3s ease-in;
+    
+}
+nav ul li a:hover{
+    border-color: #90EE90 ;
+    background-color: #EDC9AF ;
+}
+
+main{
+    grid-column: 1/20;
+    grid-row: 2/5;
+    text-align: center;
+    font-size: x-large;
+}
+
+aside{
+    grid-column: 1/20;
+    grid-row: 5/6;
+    text-align: center;
+    font-size: larger;
+}
+
+footer{
+    grid-column: 1/20;
+    grid-row: 6/7;
+    text-align: center;
+    font-size: large;
+}
+input {
+    transition:Transform 0.5s ease;
+}
+input:Hover{
+    box-shadow: 0 4px 8px #286716;
+    transform: scale(1.05);
+}
+textarea {
+    transition:Transform 0.5s ease;
+}
+textarea:Hover{
+    box-shadow: 0 4px 8px #286716;
+    transform: scale(1.05);
+}
+Button {
+    width:150px;
+    height: 30px;
+    border-radius: 25px;
+    transition: Transform 0.5s ease;
+}
+button:hover {
+    transform: Scale(1.1);
+    box-shadow: 0 4px 8px #286716;
+}
