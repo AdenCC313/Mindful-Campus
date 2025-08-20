@@ -22,10 +22,12 @@ nav{
 }
 
 header, nav{
-    background-image: url(Images/Header\ Background.png);
+    background-image: url(Images/Header\ Background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position-y: 220%;
+    color: white;
 }
 
 nav ul {
@@ -40,7 +42,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-size: 20px;
-    color:black ;
+    color:white ;
     border: 3px solid #f1f8f6;
     border-radius: 25px;
     padding: 5px;
@@ -51,6 +53,7 @@ nav ul li a {
 nav ul li a:hover{
     border-color: #90EE90 ;
     background-color: #EDC9AF ;
+    color: black;
 }
 
 
@@ -210,3 +213,4 @@ transform: translateY(15px);
     animation-range: entry 5% cover 30%;
 
 }
+
